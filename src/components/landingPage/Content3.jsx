@@ -16,7 +16,7 @@ function HowitWorks() {
             <h2 className='text-4xl font-bold mb-6'>About</h2>
             <p className='text-lg mb-4'>Ecommerce was born out of a simple idea: to make online shopping more human.</p>
             <div className='p-6'>
-              <Link to="/signup" className="flex items-center font-bold"> {/* Use Link component here */}
+              <Link to="/" className="flex items-center font-bold"> {/* Use Link component here */}
                 Make your first purchase
                 <img src={arrowRight} alt="An arrow" className="ml-2" />
               </Link>

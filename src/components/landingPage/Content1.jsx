@@ -28,7 +28,7 @@ function Content1() {
             </div>
             <p className="mt-2 text-sm">
               Already have an account?{" "}
-              <Link to="/login" className="text-black underline">
+              <Link to="/" className="text-black underline">
                 Log In now
               </Link>
             </p>

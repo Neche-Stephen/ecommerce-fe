@@ -17,7 +17,7 @@ function Content4() {
             Track, prioritize and resolve issues <br /> seamlessly
           </p>
           <div>
-            <Link to="/signup" className="flex items-center font-bold"> {/* Use Link component here */}
+            <Link to="/" className="flex items-center font-bold"> {/* Use Link component here */}
               Make your first sale
               <img src={arrowRight} alt="An arrow" className="ml-2" />
             </Link>

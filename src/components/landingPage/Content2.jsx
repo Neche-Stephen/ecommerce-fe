@@ -38,7 +38,7 @@ function Content2() {
             </li>
           </ul>
           <div className='mr-6 font-bold p-6'>
-            <Link to="/signup" className="flex items-center font-bold"> {/* Use Link component here */}
+            <Link to="/" className="flex items-center font-bold"> {/* Use Link component here */}
               Make your first sale
               <img src={arrowRight} alt="An arrow" className="ml-2" />
             </Link>

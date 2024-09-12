@@ -41,7 +41,7 @@ function Header() {
               <a href="#pages" className="text-lg hover:text-blue-600">Pages</a>
               <a href="#contact" className="text-lg hover:text-blue-600">Contact</a>
             </div>
-            <Link to = "/signup" className="hidden md:block bg-blue-600 text-white px-4 py-2 rounded-md">Start Free Trial</Link>
+            <Link to = "/" className="hidden md:block bg-blue-600 text-white px-4 py-2 rounded-md">Start Free Trial</Link>
             <button onClick={toggleMenu} className="md:hidden flex items-center px-3 py-2 border rounded text-blue-600 border-blue-600">
               <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <title>Menu</title>
