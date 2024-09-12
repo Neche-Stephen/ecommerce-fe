@@ -18,21 +18,21 @@ function Content2() {
           <br />
           <h3 className='text-4xl font-bold mb-6'>Key Features</h3>
           <p className='text-lg mb-4'>
-            Discover the powerful features of Escalayt that<br /> make facility management a breeze
+          We’ve carefully crafted Ecommerce to deliver the best online shopping experience<br /> focusing on convenience, speed, and user satisfaction.
           </p>
           <ul>
             <li className='flex items-center'>
-              <img src={check} alt="check" className='mr-2' />Easy Ticket Creation
+              <img src={check} alt="check" className='mr-2' />Seamless Product Search
             </li>
             <li className='flex items-center'>
-              <img src={check} alt="check" className='mr-2' />Real-Time Tracking
+              <img src={check} alt="check" className='mr-2' />Secure Checkout
             </li>
             <li className='flex items-center'>
-              <img src={check} alt="check" className='mr-2' />Detailed Reports and Analytics
+              <img src={check} alt="check" className='mr-2' />Personalized Shopping Recommendations
             </li>
-            <li className='flex items-center'>
+            {/* <li className='flex items-center'>
               <img src={check} alt="check" className='mr-2' />Team Collaboration
-            </li>
+            </li> */}
             <li className='flex items-center'>
               <img src={check} alt="check" className='mr-2' />User-Friendly Interface
             </li>

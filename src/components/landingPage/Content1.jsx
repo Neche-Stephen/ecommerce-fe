@@ -11,11 +11,10 @@ function Content1() {
             <br />
             <br />
             <h1 className="text-4xl font-bold mb-8">
-              Your Comprehensive Facility Management Solution
+              Transforming your shopping experience, one click at a time.
             </h1>
             <p className="text-lg mb-4">
-              Streamline your facility management with our efficient and
-              user-friendly ticketing system.
+            Whether you're looking for the latest tech gadgets or a unique gift, Ecommerce brings the best products right to your fingertips.
             </p>
             <div className="flex justify-center md:justify-start items-center space-x-2">
               <input

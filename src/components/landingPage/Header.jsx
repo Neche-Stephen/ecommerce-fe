@@ -32,7 +32,7 @@ function Header() {
           <div className="container mx-auto px-4 flex justify-between items-center">
             <div className="flex items-center pl-6">
               <img src={escalaytlogo} alt="The escalayt logo" className='mt-1' />
-              <span className='font-bold ml-2 mt-1 text-blue-500'>Escalayt</span>
+              <span className='font-bold ml-2 mt-1 text-blue-500'>Ecommerce</span>
             </div>
             <div className="hidden md:flex space-x-8">
               <a href="#demos" className="text-lg hover:text-blue-600">Demos</a>
