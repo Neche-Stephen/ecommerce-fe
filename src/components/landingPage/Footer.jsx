@@ -7,7 +7,7 @@ function Footer() {
         <div className='bg-blue-600 text-white py-10 px-8 rounded-md mb-10 flex flex-col md:flex-row items-center justify-between'>
           <div className='mb-6 md:mb-0'>
             <h1 className='text-3xl font-bold mb-2'>Get Started Today</h1>
-            <p>Join the many businesses that trust Escalayt for their facility management needs. Sign up now and experience the difference.</p>
+            <p>Join the many businesses that trust Ecommerce for their needs. Sign up now and experience the difference.</p>
           </div>
           <div>
             <button className='bg-black text-white px-6 py-3 rounded-md'>Download Now</button>
@@ -16,7 +16,7 @@ function Footer() {
         <div className='flex flex-col md:flex-row text-white justify-between'>
           <div className='mb-6 md:mb-0'>
             <h3 className='font-bold text-xl mb-2'>Contact Information</h3>
-            <p>For support, email us at support@escalayt.com or call us at (123) 456-7890.</p>
+            <p>For support, email us at support@ecommerce.com or call us at (123) 456-7890.</p>
           </div>
           <div className='mb-6 md:mb-0'>
             <h3 className='font-bold text-xl mb-2'>Company</h3>

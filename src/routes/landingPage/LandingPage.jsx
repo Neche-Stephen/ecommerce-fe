@@ -14,8 +14,8 @@ function LandingPage() {
         <Content1 />
         <Content2 />
         <Content3 />
-        <Content4 />
-        <Testimonials />
+        {/* <Content4 /> */}
+        {/* <Testimonials /> */}
         <Footer />
     </div>
   )

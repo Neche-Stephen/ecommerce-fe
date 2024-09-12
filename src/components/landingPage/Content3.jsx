@@ -21,8 +21,8 @@ function HowitWorks() {
                 <img src={arrowRight} alt="An arrow" className="ml-2" />
               </Link>
 
-              <div className="bg-white text-black py-10 border">
-                <div className=" border mx-auto px-4">
+              <div className="bg-white text-black py-10 ">
+                <div className="  mx-auto px-4">
                   <h2 className="text-3xl font-bold text-center mb-6">About the Developer</h2>
                   <div className="border border-black rounded-lg p-6 hover:shadow-lg transition duration-300 ease-in-out">
                     <h3 className="text-xl font-semibold">Chinecherem (Stephen) Ubawike</h3>
@@ -38,13 +38,13 @@ function HowitWorks() {
                       <a href="https://github.com/Neche-Stephen" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-black transition-colors">
                         <i className="fab fa-github text-2xl"></i> {/* Font Awesome GitHub Icon */}
                       </a>
-                      <a href="https://twitter.com/yourTwitterHandle" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-black transition-colors">
+                      <a href="https://twitter.com/CUbawike" target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-black transition-colors">
                         <i className="fab fa-twitter text-2xl"></i> {/* Font Awesome Twitter Icon */}
                       </a>
                     </div>
                   </div>
                   <div className="text-center mt-12">
-                    <a href="https://github.com/Neche-Stephen/ecommerce-project" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 border border-black text-black font-semibold rounded hover:bg-black hover:text-white transition-colors">
+                    <a href="https://github.com/Neche-Stephen/ecommerce-fe" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 border border-black text-black font-semibold rounded hover:bg-black hover:text-white transition-colors">
                       View Project on GitHub
                     </a>
                   </div>
