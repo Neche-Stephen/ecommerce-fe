@@ -1,8 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import focusedManUsingLaptop from "../../assets/landingPage/Image1.png";
+import { useNavigate } from "react-router-dom";
+
 
 function Content1() {
+  const navigate = useNavigate();
+  const gotoApp = ()=>{
+    navigate('/')
+  }
+  
   return (
     <div className="flex justify-center items-center min-h-screen bg-blue-50 pt-0 border-1">
       <section className="py-2 border-1 mb-16 pt-0 md:space-x-16 mr-2">
@@ -22,7 +29,7 @@ function Content1() {
                 placeholder="Enter your email"
                 className="p-2 border w-full md:w-96"
               />
-              <button className="bg-blue-600 text-white px-6 py-2 whitespace-nowrap">
+              <button onClick={gotoApp} className="bg-blue-600 text-white px-6 py-2 whitespace-nowrap">
                 Start Free Trial
               </button>
             </div>

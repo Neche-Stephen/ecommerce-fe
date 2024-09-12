@@ -3,10 +3,10 @@ import { useState } from 'react';
 import FormInput from '../form-input/form-input.component';
 import Button from '../button/button.component';
 
-import {
-  createAuthUserWithEmailAndPassword,
-  createUserDocumentFromAuth,
-} from '../../utils/firebase/firebase.utils';
+// import {
+//   createAuthUserWithEmailAndPassword,
+//   createUserDocumentFromAuth,
+// } from '../../utils/firebase/firebase.utils';
 
 import './sign-up-form.styles.scss';
 
@@ -28,25 +28,39 @@ const SignUpForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    const requestBody = { username:displayName, email, password };
+
     if (password !== confirmPassword) {
       alert('passwords do not match');
       return;
     }
 
     try {
-      const { user } = await createAuthUserWithEmailAndPassword(
-        email,
-        password
-      );
-
-      await createUserDocumentFromAuth(user, { displayName });
-      resetFormFields();
-    } catch (error) {
-      if (error.code === 'auth/email-already-in-use') {
-        alert('Cannot create user, email already in use');
+      const response = await fetch(`http://ecommerce-service-env.eba-2cfa5p2b.eu-north-1.elasticbeanstalk.com/api/v1/auth/register`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestBody),
+      });
+ 
+      if (response.ok) {
+        setIsSignupSucessful(true);
+        // alert("Registration successful!");
+        // navigate("/login");
+        console.log(response)
       } else {
-        console.log('user creation encountered an error', error);
+        // const errorText = await response.json();
+        // alert(`Registration failed: ${errorText}`);
+        console.log(response);
+        // Extract error message from the response
+        const errorData = await response.json();
+        const errorMessage = errorData.message || "Error creating user";
+        console.log(errorData)
+        console.log(errorMessage);
       }
+    } catch (error) {
+      alert(`Error: ${error.message}`);
     }
   };
 

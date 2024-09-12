@@ -2,39 +2,66 @@ import { useState } from 'react';
 
 import FormInput from '../form-input/form-input.component';
 import Button from '../button/button.component';
-
-import {
-  signInAuthUserWithEmailAndPassword,
-  signInWithGooglePopup,
-} from '../../utils/firebase/firebase.utils';
+import axios from 'axios';
+// import {
+//   signInAuthUserWithEmailAndPassword,
+//   signInWithGooglePopup,
+// } from '../../utils/firebase/firebase.utils';
 
 import './sign-in-form.styles.scss';
 
 const defaultFormFields = {
-  email: '',
+ username: '',
   password: '',
 };
 
 const SignInForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
-  const { email, password } = formFields;
+  const { username, password } = formFields;
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
   };
 
-  const signInWithGoogle = async () => {
-    await signInWithGooglePopup();
-  };
+  // const signInWithGoogle = async () => {
+  //   await signInWithGooglePopup();
+  // };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
-      await signInAuthUserWithEmailAndPassword(email, password);
-      resetFormFields();
+      const response = await axios.post(`http://ecommerce-service-env.eba-2cfa5p2b.eu-north-1.elasticbeanstalk.com/api/v1/auth/login`, {
+       username, password
+      }, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      // console.log(response);
+  
+      if (response.data && response.data.loginInfo) {
+        const { username, token } = response.data.loginInfo;
+        // Store the username and token in localStorage
+        localStorage.setItem('username', username);
+        localStorage.setItem('token', token);
+        // console.log("admin token",token)
+        // navigate('/admin/dashboard');
+      }
+
     } catch (error) {
-      console.log('user sign in failed', error);
+      // console.error('Failed to login user', error);
+      console.error('Failed to login user');
+      console.log(error);
+
+      // console.log(error.response.data);
+      // const notify = () => toast(error.response.data);
+
+      // notify();
+      // toast.error(error.response.data)
+      if (error.response) {
+        console.error('Error response data:', error.response.data);
+      }
     }
   };
 
@@ -50,12 +77,12 @@ const SignInForm = () => {
       <span>Sign in with your email and password</span>
       <form onSubmit={handleSubmit}>
         <FormInput
-          label='Email'
-          type='email'
+          label='User name'
+          type='text'
           required
           onChange={handleChange}
-          name='email'
-          value={email}
+          name='username'
+          value={username}
         />
 
         <FormInput
@@ -68,7 +95,7 @@ const SignInForm = () => {
         />
         <div className='buttons-container'>
           <Button type='submit'>Sign In</Button>
-          <Button buttonType='google' type='button' onClick={signInWithGoogle}>
+          <Button buttonType='google' type='button' >
             Sign In With Google
           </Button>
         </div>
