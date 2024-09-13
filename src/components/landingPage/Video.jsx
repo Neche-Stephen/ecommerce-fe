@@ -8,7 +8,7 @@ export default function Video() {
   return (
     <div className='my-14'>
         
-        <div className='text-[30px] text-center'>Video</div>
+        <div className='text-[30px] text-center'>Project Video</div>
         <div className='w-[75%] mx-auto'>
           {/* <video src={video} loop controls></video> */}
           <iframe src={src} width="100%" height="580" allow="autoplay"></iframe>
