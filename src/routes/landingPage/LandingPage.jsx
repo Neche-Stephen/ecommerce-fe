@@ -6,6 +6,7 @@ import Content3 from '../../components/landingPage/Content3'
 import Content4 from '../../components/landingPage/Content4'
 import Testimonials from '../../components/landingPage/Testimonials'
 import Footer from '../../components/landingPage/Footer'
+import Video from '../../components/landingPage/Video'
 
 function LandingPage() {
   return (
@@ -16,7 +17,9 @@ function LandingPage() {
         <Content3 />
         {/* <Content4 /> */}
         {/* <Testimonials /> */}
+        <Video />
         <Footer />
+        
     </div>
   )
 }
