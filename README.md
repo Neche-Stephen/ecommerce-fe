@@ -36,6 +36,9 @@ Author(s): [Chinecherem Ubawike](https://www.linkedin.com/in/chinecherem-ubawike
 1. **Add to Cart**: Add products to your shopping cart, where you can adjust quantities or remove items.
 ---
 
+![Screenshot 2024-09-18 at 10 15 56 PM](https://github.com/user-attachments/assets/4f8b7bb9-5f69-4878-886c-f48930bf1b61)
+
+
 ## **Contributing**
 
 We welcome contributions from the community! To get started:
@@ -62,3 +65,5 @@ If you’re interested in other eCommerce-related projects, you might find these
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/Neche-Stephen/ecommerce-fe/blob/main/LICENSE) file for details.
 
 ---
+
+
