@@ -59,6 +59,6 @@ If you’re interested in other eCommerce-related projects, you might find these
 
 ## **Licensing**
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/Neche-Stephen/ecommerce/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/Neche-Stephen/ecommerce-fe/blob/main/LICENSE) file for details.
 
 ---
