@@ -4,7 +4,7 @@
 
 Ecommerce is a modern platform designed to make online shopping seamless and enjoyable. The platform offers users a clean and intuitive interface to browse and purchase a wide range of products. Ecommerce is optimized for a smooth and efficient shopping experience.
 
-[Deployed Site](https://ecommerce-fe-eta.vercel.app/home) | [Final Project Blog Article](https://medium.com/shopeasy-final-project)  
+[Deployed Site](https://ecommerce-fe-eta.vercel.app/home) | [Final Project Blog Article](https://medium.com/@chinecheremubawike/ecommerce-a-streamlined-prototype-for-modern-day-shopping-262d95ec3efa)  
 Author(s): [Chinecherem Ubawike](https://www.linkedin.com/in/chinecherem-ubawike/)
 
 ---
