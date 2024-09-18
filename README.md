@@ -66,4 +66,23 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 
 ---
 
+## **Manifesto**
+---
+# **Ecommerce - A Streamlined Solution for Modern-Day Shopping**
+
+## **Inspiration**
+
+When I first started *Ecommerce*, it was simply a project to complete a task for my ALX coursework. However, as I have dug deeper into the development process. I have seen the potential for this project to evolve beyond just an assignment. I believe an eCommerce platform that meets modern consumer needs with a minimalist and efficient design would be a very good idea
+---
+
+## **Next Iteration**
+
+As I continue to develop *ecommerce*, Some of the things I could add include:
+
+- **AI-Powered Product Recommendations**: Implementing personalized suggestions based on user data to enhance the shopping experience.
+- **Progressive Web App Features**: Offline capabilities will allow users to browse and add items to their cart even when they’re not connected to the internet.
+- **Internationalization**: Adding multilingual support to make ecommerce accessible to users around the world.
+
+---
+
 
